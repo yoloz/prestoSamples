@@ -1,0 +1,10 @@
+
+bin/presto-cli-0.192 --server localhost:8080 --catalog memory --schema default
+
+CREATE TABLE test( id INT, name VARCHAR(256) );
+
+INSERT INTO memory.default.test VALUES(1,'2018');
+
+SELECT * FROM memory.default.test;
+
+DROP TABLE memory.default.test;
