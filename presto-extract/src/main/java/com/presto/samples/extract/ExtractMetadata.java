@@ -192,13 +192,13 @@ public class ExtractMetadata implements ConnectorMetadata {
         }
         return columns.build();
     }
-
-    @Override
-    public void createTable(ConnectorSession session, ConnectorTableMetadata tableMetadata) {
-        logger.info("create table======%s", tableMetadata.toString());
-        ConnectorOutputTableHandle outputTableHandle = beginCreateTable(session, tableMetadata, Optional.empty());
-        finishCreateTable(session, outputTableHandle, ImmutableList.of());
-    }
+//todo how to impl
+//    @Override
+//    public void createTable(ConnectorSession session, ConnectorTableMetadata tableMetadata) {
+//        logger.info("create table======%s", tableMetadata.toString());
+//        ConnectorOutputTableHandle outputTableHandle = beginCreateTable(session, tableMetadata, Optional.empty());
+//        finishCreateTable(session, outputTableHandle, ImmutableList.of());
+//    }
 
     @Override
     public void dropTable(ConnectorSession session, ConnectorTableHandle tableHandle) {

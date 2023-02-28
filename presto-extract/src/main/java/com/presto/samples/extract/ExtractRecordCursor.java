@@ -74,11 +74,11 @@ public class ExtractRecordCursor implements RecordCursor {
     public long getReadTimeNanos() {
         return 0;
     }
-
-    @Override
-    public long getTotalBytes() {
-        return 0;
-    }
+//todo how to impl
+//    @Override
+//    public long getTotalBytes() {
+//        return 0;
+//    }
 
     @Override
     public long getCompletedBytes() {
